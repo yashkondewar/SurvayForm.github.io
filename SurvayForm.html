@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survay Form</title>
+</head>
+<link rel="stylesheet" href="SurvayForm.css">
+<html>
+
+<body>
+
+
+    <div class="container">
+        <h1 id="title">Fashion Survey Form</h1>
+        <div id="form-outer">
+            <p id="description">
+                Let us know how we can improve Fashionista@Fashionistette
+              </p>
+            <form id="survey-form" method="GET">
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="name-label" for="name">Name:</label>
+                    </div>
+                    <div class="rightTab">
+                        <input id="name" autofocus type="text" name="name" class="input-field"
+                            placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="email-label" for="email">Email:</label>
+                    </div>
+                    <div class="rightTab">
+                        <input id="email" type="email" required name="email" class="input-field" required
+                            placeholder="Enter your Email">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="number-label" for="age">Age:</label>
+                    </div>
+                    <div class="rightTab">
+                        <input id="number" type="number" min="15" max="80" name="age" placeholder="Enter your age">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="occupation-label" for=>Which of the following is your current occupation?</label>
+                    </div>
+                    <div class="rightTab">
+                        <select id="dropdown" name="occupation" class="dropdown">
+                            <option disabled selected value="Select an option">Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="full time job">Full time job</option>
+                            <option value="Business ">Business </option>
+                            <option value="prefer not to say">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="recommend">
+                            Should yor recommend our shope to any one else</label>
+                    </div>
+                    <div class="rightTab">
+                        <ul style="list-style: none;">
+                            <li class="radio">
+                                <label>Surely
+                                    <input type="radio" class="recommend" name="radio-buttons" value="1">
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>Maybe
+                                    <input type="radio" class="recommend" name="radio-buttons" value="2">
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>Never
+                                    <input type="radio" class="recommend" name="radio-buttons" value="3">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="favourite-item">
+                            What is your favourite item from our shop: </label>
+                    </div>
+                    <div class="rightTab">
+                        <select id="favourite-item" name="favourite-item" class="dropdown">
+                            <option disabled selected value="select an option">Select an option</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="bags">Bags</options>
+                            <option value="backpacks">Backpacks</option>
+                            <option value="watches">Watches</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="price-point">My price range preference</label>
+                    </div>
+                    <div class="rightTab">
+                        <ul id="price" style="list-style: none;">
+                            <li class="checkbox"><label>$10-$20<input name="price" type="checkbox" value="1"
+                                        class="pricePreference"></label></li>
+                            <li class="checkbox"><label>$20-$50<input name="price" type="checkbox" value="2"
+                                        class="pricePreference"></label></li>
+                            <li class="checkbox"><label>$50-$70<input name="price" type="checkbox" value="3"
+                                        class="pricePreference"></label></li>
+                            <li class="checkbox"><label>$70-$99<input name="price" type="checkbox" value="4"
+                                        class="pricePreference"></label></li>
+                            <li class="checkbox"><label>$99-$150<input name="price" type="checkbox" value="5"
+                                        class="pricePreference"></label></li>
+                            <li class="checkbox"><label>$150-$175<input name="price" type="checkbox" value="6"
+                                        class="pricePreference"></label></li>
+                            <li class="checkbox"><label>$175-$199<input name="price" type="checkbox" value="7"
+                                        class="pricePreference"></label></li>
+                            <li class="checkbox"><label>$199-$225<input name="price" type="checkbox" value="8"
+                                        class="pricePreference"></label></li>
+                            <li class="checkbox"><label>$225-$250<input name="price" type="checkbox" value="9"
+                                        class="pricePreference"></label></li>
+                            <li class="checkbox"><label>$250-$500<input name="price" type="checkbox" value="10"
+                                        class="pricePreference"></label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="suggestions">Your kind feedback are welcome here</label>
+                    </div>
+                    <div class="rightTab">
+                        <textarea id="suggestions" class="input-field" style=" Resize: vertical;"
+                            name="suggestions"></textarea>
+                    </div>
+                </div>
+                <button id="submit" type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
